@@ -1,0 +1,177 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage[numbers]{natbib}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{url}
+\definecolor{accent}{HTML}{183A63}
+\definecolor{soft}{HTML}{EEF2F7}
+\hypersetup{colorlinks=true,linkcolor=accent,citecolor=accent,urlcolor=accent,pdfauthor={BSCECOM18 Research Orchestrator},pdftitle={BSCECOM18 Final Paper Package}}
+\setstretch{1.18}
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent}}{\thesubsection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus .4ex}{0.8ex}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .2ex}{0.5ex}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\footnotesize\color{accent} BSCECOM18 final paper package}
+\fancyhead[R]{}
+\fancyfoot[C]{\footnotesize\thepage}
+\newcommand{\coverrule}{\par\vspace{0.6em}\noindent\color{accent}\rule{\textwidth}{1.2pt}\par\vspace{1.2em}}
+\newcommand{\metarow}[2]{\textbf{#1} & #2 \\\ }
+\newcommand{\abstractbox}[1]{%
+  \begin{center}
+  \setlength{\fboxsep}{10pt}%
+  \fcolorbox{accent}{soft}{\parbox{0.9\textwidth}{#1}}
+  \end{center}
+}
+
+\usepackage[french]{babel}
+\begin{document}
+\begin{titlepage}
+\centering
+{\Large\bfseries\color{accent} BSCECOM18 Final Paper Package\par}
+\coverrule
+{\huge\bfseries De la personnalit{\'e} juridique des robots\par}
+\vspace{0.5em}
+{\Large {\`A} la personnalit{\'e} num{\'e}rique de l'intelligence artificielle en 2026\par}
+\vspace{1.4em}
+\begin{tabular}{>{\bfseries}p{0.23\textwidth}p{0.68\textwidth}}
+\metarow{Sujet de recherche}{The legal digital personality: from a 2019 robots approach to AI in 2026}
+\metarow{Langue}{Fran{\c c}ais}
+\metarow{Base documentaire}{M{\'e}moire de bachelor de 2019, archive du projet et sources suisses, europ{\'e}ennes et internationales mises {\`a} jour jusqu'en 2026}
+\metarow{Position du chercheur}{Synth{\`e}se ind{\'e}pendante {\`a} dominante doctrinale, centr{\'e}e sur les cat{\'e}gories juridiques, l'imputation et la compatibilit{\'e} avec le droit suisse et europ{\'e}en}
+\metarow{Date}{3 avril 2026}
+\end{tabular}
+\vfill
+\abstractbox{\textbf{R{\'e}sum{\'e}.} Le m{\'e}moire de 2019 sur la taxation des robots contenait une intuition plus profonde que sa seule conclusion fiscale: si l'on voulait un jour attribuer un revenu, une charge fiscale ou une responsabilit{\'e} propre aux syst{\`e}mes automatis{\'e}s, il faudrait disposer d'une cat{\'e}gorie juridique apte {\`a} servir de point d'imputation. En 2026, cette intuition demeure pertinente, mais elle doit {\^e}tre reconstruite. Le droit positif europ{\'e}en et suisse n'a pas consacr{\'e} une personnalit{\'e} juridique g{\'e}n{\'e}rale de l'IA; il a pr{\'e}f{\'e}r{\'e} une gouvernance fond{\'e}e sur les fournisseurs, les d{\'e}ployeurs et les autres acteurs de la cha{\^\i}ne d'usage. Le pr{\'e}sent article soutient d{\`e}s lors qu'il faut distinguer la personnalit{\'e} pleine et enti{\`e}re, qui reste doctrinalement excessive, d'une \emph{personnalit{\'e} num{\'e}rique limit{\'e}e}, entendue comme une technique fonctionnelle d'identification, de tra{\c c}abilit{\'e}, d'audit et d'imputation dans des contextes strictement d{\'e}limit{\'e}s. Une telle construction peut {\^e}tre utile sans d{\'e}placer le centre de responsabilit{\'e} hors des personnes physiques et morales.}\vfill
+{\small Version fran{\c c}aise ind{\'e}pendante du paquet final produit avec le workflow BSCECOM18.}\par
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+Le travail de 2019 consacr{\'e} {\`a} la taxation des robots partait d'une inqui{\'e}tude d{\'e}sormais classique: si l'automatisation remplace une partie du travail humain, les recettes fiscales et le financement des assurances sociales, encore fortement index{\'e}s sur la masse salariale, peuvent devenir plus fragiles \citep{graz2019}. Le m{\'e}moire aboutissait {\`a} une conclusion prudente mais nette: dans une petite {\'e}conomie ouverte comme la Suisse, une taxe sur les robots comme capital productif est le plus souvent inefficiente, difficile {\`a} administrer et potentiellement contre-productive \citep{graz2019,guerreiro2019,thuemmel2018}.
+
+Toutefois, l'int{\'e}r{\^e}t principal du travail ne se r{\'e}duit pas {\`a} ce refus. Le texte formule aussi une hypoth{\`e}se beaucoup plus ambitieuse: si l'on cessait de traiter le robot comme un simple input de production et qu'on cherchait {\`a} lui attribuer un revenu, une capacit{\'e} contributive ou une responsabilit{\'e} propre, alors une forme de personnalit{\'e} juridique {\'e}lectronique deviendrait n{\'e}cessaire \citep{graz2019,oberson2017}. C'est cette intuition qu'il faut r{\'e}interpr{\'e}ter en 2026.
+
+En effet, le d{\'e}bat contemporain ne porte plus prioritairement sur des robots industrialis{\'e}s, visibles et mat{\'e}riellement identifiables. Il concerne des syst{\`e}mes d'intelligence artificielle diffus, mis {\`a} jour en continu, int{\'e}gr{\'e}s dans des logiciels, des mod{\`e}les g{\'e}n{\'e}ratifs, des interfaces de programmation ou des cha{\^\i}nes organisationnelles transfronti{\`e}res \citep{oecd2025adoption,oecd2025sme,wef2025jobs}. Parall{\`e}lement, les instruments juridiques qui se sont impos{\'e}s au niveau europ{\'e}en et suisse ont choisi une autre voie que celle de la personnalit{\'e} pleine et enti{\`e}re. Ils ont renforc{\'e} les obligations des fournisseurs, d{\'e}ployeurs et institutions responsables plut{\^o}t que de consacrer l'IA comme nouveau sujet de droit \citep{eu2024aiact,ec2026aiactfaq,ofcom2025swissai,coe2024framework}.
+
+La question centrale devient alors la suivante: existe-t-il, entre l'objet technique ordinaire et la personne juridique compl{\`e}te, une cat{\'e}gorie interm{\'e}diaire susceptible d'am{\'e}liorer l'imputation, la tra{\c c}abilit{\'e} et, dans certains cas, l'ordonnancement fiscal et assurantiel? La th{\`e}se d{\'e}fendue ici est positive, mais sous de fortes r{\'e}serves. Une \emph{personnalit{\'e} num{\'e}rique limit{\'e}e} peut avoir une utilit{\'e} fonctionnelle dans des contextes circonscrits; une personnalit{\'e} g{\'e}n{\'e}rale de l'IA demeure en revanche doctrinalement et institutionnellement disproportionn{\'e}e.
+
+\section{Revenir au noyau de l'analyse de 2019}
+Le m{\'e}moire de 2019 est utile parce qu'il a bien identifi{\'e} la difficult{\'e} majeure d'une taxe sur les robots: l'inad{\'e}quation entre l'objet fiscal retenu et la r{\'e}alit{\'e} {\'e}conomique de l'automatisation \citep{graz2019}. Le robot, envisag{\'e} comme bien d'{\'e}quipement, ne constitue pas une assiette fiscale stable. Les probl{\`e}mes de d{\'e}finition, de localisation, de contr{\^o}le et d'incidence {\'e}conomique fragilisent la taxe. La litt{\'e}rature de la fin des ann{\'e}es 2010 allait d'ailleurs dans le m{\^e}me sens: les gains potentiels d'une telle taxe sont limit{\'e}s, les co{\^u}ts administratifs peuvent {\^e}tre {\'e}lev{\'e}s, et l'instrument cible mal la source des difficult{\'e}s distributives \citep{guerreiro2019,thuemmel2018,gasteiger2017,acemoglu2018modeling}.
+
+Mais le texte ne s'arr{\^e}te pas {\`a} cette critique. Il op{\`e}re un glissement conceptuel plus profond. Si le robot est regard{\'e} non plus seulement comme capital mais comme substitut du travail, la logique de l'imposition change. Il ne s'agit plus d'imposer son existence mat{\'e}rielle, mais d'imaginer une imputation de revenu et de charge contributive. C'est ici que surgit la personnalit{\'e} juridique {\'e}lectronique \citep{graz2019,oberson2017}.
+
+Cette intuition doit {\^e}tre prise au s{\'e}rieux. Elle ne signifie pas que le m{\'e}moire appelait n{\'e}cessairement la reconnaissance d'une nouvelle personne comparable {\`a} la personne morale. Elle signifie plut{\^o}t qu'une fiscalit{\'e} fond{\'e}e sur des activit{\'e}s automatis{\'e}es autonomis{\'e}es finit par rencontrer un probl{\`e}me d'imputation juridique. En cela, le texte de 2019 reste remarquablement pr{\'e}monitoire.
+
+\section{Pourquoi le cadre de 2026 oblige {\`a} changer d'objet}
+Le passage de 2019 {\`a} 2026 ne correspond pas {\`a} une simple actualisation terminologique. Il s'agit d'un changement d'objet. En 2019, le robot pouvait encore servir de figure synth{\'e}tique de l'automatisation. En 2026, l'activit{\'e} productive pertinente passe tr{\`e}s souvent par des mod{\`e}les g{\'e}n{\'e}raux, des services cloud, des interfaces logicielles, des outils d'assistance, des agents d'orchestration et des usages organisationnels difficilement r{\'e}ductibles {\`a} un bien individualisable \citep{oecd2025adoption,oecd2025sme,brollo2024}.
+
+Ce changement a trois cons{\'e}quences doctrinales. D'abord, l'assiette ou le support mat{\'e}riel de l'action devient plus difficile {\`a} isoler. Ensuite, la fronti{\`e}re entre l'outil et le syst{\`e}me se brouille: ce qui produit l'effet pertinent est souvent une combinaison de mod{\`e}le, de donn{\'e}es, de param{\'e}trage, d'int{\'e}gration logicielle et de d{\'e}cision humaine. Enfin, la r{\'e}partition des responsabilit{\'e}s se complexifie, parce que le fournisseur du mod{\`e}le, son int{\'e}grateur, le d{\'e}ployeur et l'utilisateur final n'occupent pas la m{\^e}me position juridique.
+
+Le droit positif l'a bien compris. Le r{\`e}glement europ{\'e}en sur l'intelligence artificielle adopte une logique fond{\'e}e sur le risque et sur la cha{\^\i}ne d'acteurs, non sur la personnification de la machine \citep{eu2024aiact,ec2026aiactfaq}. La Suisse a retenu une strat{\'e}gie comparable: adaptations sectorielles, prudence institutionnelle, protection des droits fondamentaux et recherche de compatibilit{\'e} avec les standards internationaux \citep{ofcom2025swissai}. Quant au Conseil de l'Europe, il a choisi de lier l'IA au cadre des droits humains, de la d{\'e}mocratie et de l'{\'E}tat de droit, non {\`a} l'{\'e}mergence d'un sujet autonome \citep{coe2024framework}.
+
+La cons{\'e}quence n'est pas la disparition de la question du statut, mais sa reformulation. La personnalit{\'e} juridique ne peut plus {\^e}tre pens{\'e}e comme le destin naturel de l'IA. Elle devient, le cas {\'e}ch{\'e}ant, un outil d'imputation limit{\'e} parmi d'autres.
+
+\section{Personnalit{\'e} juridique, personnalit{\'e} num{\'e}rique et fonction d'imputation}
+La personnalit{\'e} juridique n'est pas un attribut moral. C'est une technique de construction normative. Elle permet au droit de fixer un centre d'imputation stable pour des droits, des obligations, des capacit{\'e}s, des actes et des responsabilit{\'e}s. Dans cette perspective, le d{\'e}bat sur l'IA doit distinguer au moins trois niveaux.
+
+\subsection{La personnalit{\'e} pleine et enti{\`e}re}
+Une personnalit{\'e} pleine et enti{\`e}re de l'IA rapprocherait le syst{\`e}me d'intelligence artificielle d'une personne morale. Une telle option supposerait des r{\'e}ponses solides en mati{\`e}re de repr{\'e}sentation, de patrimoine, de sanction, de proc{\'e}dure, de faillite, de fiscalit{\'e} et d'articulation avec les droits fondamentaux. Rien, dans le droit positif de 2026, ne justifie un tel saut.
+
+\subsection{La personnalit{\'e} symbolique}
+Le langage de la personnalit{\'e} peut aussi n'avoir qu'une fonction rh{\'e}torique: souligner l'importance sociale de l'IA ou la profondeur de ses effets. Mais une personnalit{\'e} purement symbolique aide peu le droit positif. Elle n'am{\'e}liore ni la responsabilit{\'e}, ni la fiscalit{\'e}, ni la tra{\c c}abilit{\'e}.
+
+\subsection{La personnalit{\'e} num{\'e}rique limit{\'e}e}
+La troisi{\`e}me voie, qui me para{\^\i}t la plus s{\'e}rieuse, consiste {\`a} comprendre la personnalit{\'e} num{\'e}rique comme une construction fonctionnelle et limit{\'e}e. Elle ne cr{\'e}e pas un sujet g{\'e}n{\'e}ral; elle institue un point d'identification persistant permettant d'articuler l'enregistrement, les journaux d'activit{\'e}, l'auditabilit{\'e}, l'assurance et certaines cons{\'e}quences fiscales ou prudentielles lorsque la seule r{\'e}f{\'e}rence {\`a} l'op{\'e}rateur devient trop grossi{\`e}re.
+
+Relue sous cet angle, la r{\'e}solution du Parlement europ{\'e}n de 2017 sur les r{\`e}gles de droit civil relatives {\`a} la robotique appara{\^\i}t moins comme un mod{\`e}le normatif abouti que comme le sympt{\^o}me d'une recherche de vocabulaire interm{\'e}diaire \citep{ep2017robotics}. L'intuition {\'e}tait juste; la cat{\'e}gorie devait encore {\^e}tre disciplin{\'e}e.
+
+\section{Pourquoi le droit positif pr{\'e}f{\`e}re aujourd'hui les acteurs aux personnes artificielles}
+L'{\'e}volution normative observ{\'e}e depuis 2024 fournit un argument puissant contre la personnalit{\'e} g{\'e}n{\'e}rale de l'IA. Les obligations pertinentes sont aujourd'hui port{\'e}es par des acteurs identifiables: fournisseurs, d{\'e}ployeurs, importateurs, distributeurs, exploitants et institutions responsables \citep{eu2024aiact,ec2026aiactfaq}. C'est sur eux que reposent les devoirs de documentation, de journalisation, d'{\'e}valuation des risques, de supervision humaine et de rem{\'e}diation.
+
+Cette architecture n'est pas contingente. Elle correspond {\`a} la logique du droit public contemporain. Lorsque le risque concerne la s{\'e}curit{\'e}, l'opacit{\'e}, la manipulation ou les droits fondamentaux, le droit a besoin de destinataires capables d'obtemp{\'e}rer, de rendre des comptes, d'{\^e}tre sanctionn{\'e}s et, si n{\'e}cessaire, d'indemniser. Les personnes physiques et morales remplissent cette fonction; les syst{\`e}mes d'IA ne la remplissent pas.
+
+Il serait cependant exag{\'e}r{\'e} d'en conclure que la question du statut est close. Dans certains cas, une gouvernance uniquement centr{\'e}e sur les acteurs humains et institutionnels peut manquer de finesse. Des syst{\`e}mes hautement automatis{\'e}s, durables, r{\'e}utilisables et g{\'e}n{\'e}rateurs d'effets {\'e}conomiques ou prudentiels significatifs peuvent exiger une identit{\'e} juridique-technique plus robuste qu'un simple identifiant technique. C'est pr{\'e}cis{\'e}ment l'espace possible d'une personnalit{\'e} num{\'e}rique limit{\'e}e.
+
+\section{Cons{\'e}quences fiscales et assurantielles du choix de statut}
+Le projet BSCECOM18 ne pouvait pas perdre de vue la question fiscale initiale. Le choix du statut juridique d'un syst{\`e}me d'IA d{\'e}termine, directement ou indirectement, la mani{\`e}re dont le droit imagine le sujet imposable, les obligations d{\'e}claratives et les bases pertinentes du financement social.
+
+De ce point de vue, la le{\c c}on de 2019 reste robuste. Une taxe portant sur le robot comme capital productif {\'e}tait d{\'e}j{\`a} fragile; elle l'est encore davantage lorsque l'automatisation devient logicielle, diffuse et transfronti{\`e}re \citep{graz2019,brollo2024}. Le probl{\`e}me n'est pas seulement le niveau de la taxe, mais l'instabilit{\'e} de son objet. Une intelligence artificielle int{\'e}gr{\'e}e dans des licences, des interfaces, des services d'inf{\'e}rence et des r{\'e}organisations internes se pr{\^e}te mal {\`a} une fiscalit{\'e} de type robotique.
+
+Le centre de gravit{\'e} fiscal se d{\'e}place donc vers l'entreprise, la rente qu'elle capture et les bases plus larges susceptibles de soutenir le financement des assurances sociales. L'impl{\'e}mentation suisse de l'imp{\^o}t minimum de l'OCDE illustre cette direction: les gains tir{\'e}s d'organisations intensives en actifs incorporels et en IA sont plus plausiblement appr{\'e}hend{\'e}s au niveau des groupes et des profits qu'au niveau d'un pseudo-contribuable machinique \citep{swissfdf2024pillar2}. Les travaux r{\'e}cents de l'OCDE et du FMI vont dans le m{\^e}me sens: la question prioritaire est celle du partage des gains de productivit{\'e}, de la diffusion des comp{\'e}tences et de l'adaptation des bases fiscales, non celle de la personification fiscale g{\'e}n{\'e}rale de l'IA \citep{oecd2025adoption,oecd2025sme,brollo2024,wef2025jobs}.
+
+Il ne faut pas en d{\'e}duire que la personnalit{\'e} num{\'e}rique est sans incidence fiscale. Elle peut servir, de mani{\`e}re auxiliaire, {\`a} mieux organiser l'imputation d'activit{\'e}s automatis{\'e}es, la continuit{\'e} des journaux, l'articulation avec des assurances obligatoires ou la ventilation de certains flux informationnels utiles {\`a} la conformit{\'e}. Mais elle ne saurait {\^e}tre raisonnablement {\'e}rig{\'e}e en contribuable g{\'e}n{\'e}ral autonome.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Quatre mod{\`e}les d'appr{\'e}hension juridique de l'IA}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.9cm} >{\raggedright\arraybackslash}p{3.1cm} X >{\centering\arraybackslash}p{1.7cm}}
+\toprule
+Mod{\`e}le & Centre d'imputation & Int{\'e}r{\^e}t principal et risque principal & Plausibilit{\'e} en 2026 \\
+\midrule
+Outil ordinaire & Personnes physiques et morales utilisatrices & Simplicit{\'e} et continuit{\'e}; insuffisant si l'on exige une identit{\'e} persistante pour l'audit ou la tra{\c c}abilit{\'e} & {\'E}lev{\'e}e \\
+Gouvernance par les acteurs & Fournisseurs, d{\'e}ployeurs et institutions & Conforme au droit positif; peut laisser des lacunes d'imputation dans certains cas tr{\`e}s automatis{\'e}s & Tr{\`e}s {\'e}lev{\'e}e \\
+Personnalit{\'e} pleine de l'IA & Syst{\`e}me d'IA comme sujet g{\'e}n{\'e}ral & Rupture conceptuelle forte; risque majeur d'anthropomorphisme et de dilution des responsabilit{\'e}s & Faible \\
+Personnalit{\'e} num{\'e}rique limit{\'e}e & Identit{\'e} persistante int{\'e}gr{\'e}e {\`a} une cha{\^\i}ne de responsabilit{\'e} humaine & Am{\'e}liore l'enregistrement, les journaux et certains m{\'e}canismes d'assurance; devient dangereuse si elle sert d'{\'e}cran & Moyenne \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Proposition: une personnalit{\'e} num{\'e}rique limit{\'e}e et subsidiaire}
+La proposition d{\'e}fendue ici est volontairement restreinte. Le droit ne doit pas consacrer une personnalit{\'e} g{\'e}n{\'e}rale de l'IA. Il peut, en revanche, examiner la cr{\'e}ation d'une personnalit{\'e} num{\'e}rique limit{\'e}e lorsqu'une identit{\'e} persistante et juridiquement lisible am{\'e}liore de mani{\`e}re tangible la gouvernance.
+
+Une telle construction devrait r{\'e}pondre au minimum aux conditions suivantes.
+
+\begin{enumerate}[leftmargin=1.4em]
+  \item \textbf{N{\'e}cessit{\'e} fonctionnelle.} La cat{\'e}gorie ne se justifie que si le droit existant ne permet pas d'assurer correctement l'imputation, la tra{\c c}abilit{\'e} ou l'audit.
+  \item \textbf{Port{\'e}e limit{\'e}e.} Elle doit rester sectorielle, r{\'e}versible et attach{\'e}e {\`a} des usages pr{\'e}cis.
+  \item \textbf{Maintien du centre de responsabilit{\'e}.} Les personnes physiques et morales demeurent les sujets principaux du droit, y compris pour la responsabilit{\'e}, la conformit{\'e} et la fiscalit{\'e}.
+  \item \textbf{Absence de droits g{\'e}n{\'e}raux.} Aucune extension automatique vers un patrimoine autonome, des droits fondamentaux ou une capacit{\'e} politique ne doit en d{\'e}couler.
+  \item \textbf{Gain normatif d{\'e}montrable.} La construction doit am{\'e}liorer l'enregistrement, les journaux, l'assurance, les dispositifs d'indemnisation ou les obligations prudentielles.
+  \item \textbf{Modestie fiscale.} La personnalit{\'e} num{\'e}rique n'a pas vocation {\`a} devenir un contribuable g{\'e}n{\'e}ral, mais seulement, {\`a} titre auxiliaire, un support d'imputation ou de reporting.
+\end{enumerate}
+
+Ainsi comprise, la personnalit{\'e} num{\'e}rique limit{\'e}e n'est pas un succ{\'e}dan{\'e} de la personne morale. C'est une technique d'interface entre un syst{\`e}me technique persistant et une cha{\^\i}ne de responsabilit{\'e} humaine et institutionnelle.
+
+\section{Objections et garde-fous}
+La premi{\`e}re objection est celle de l'anthropomorphisme. Parler de personnalit{\'e}, m{\^e}me limit{\'e}e, risque de projeter sur l'IA une qualit{\'e} morale ou politique qu'elle ne poss{\`e}de pas. Cette objection est s{\'e}rieuse et impose une discipline terminologique constante.
+
+La deuxi{\`e}me objection tient au risque d'{\'e}cran de responsabilit{\'e}. Une entreprise pourrait vouloir instrumentaliser la personnalit{\'e} num{\'e}rique pour d{\'e}placer la faute ou l'obligation de r{\'e}paration vers une entit{\'e} technique d{\'e}pourvue de substance. C'est pourquoi toute construction recevable doit affirmer express{\'e}ment la primaut{\'e} des personnes physiques et morales.
+
+La troisi{\`e}me objection est celle de l'inutilit{\'e}. Peut-{\^e}tre que les identifiants techniques, les obligations de journalisation, les assurances obligatoires et les ajustements sectoriels suffisent d{\'e}j{\`a}. Dans de nombreux cas, ce sera sans doute vrai. La charge de la preuve repose donc sur la partie qui d{\'e}fend une innovation statutaire.
+
+Ces objections expliquent pourquoi la personnalit{\'e} num{\'e}rique ne peut {\^e}tre qu'un outil subsidiaire. Elle doit rester exceptionnelle, justifi{\'e}e et entour{\'e}e de garde-fous.
+
+\section{Conclusion}
+Le m{\'e}moire de 2019 n'a pas seulement montr{\'e} qu'une taxe sur les robots {\'e}tait le plus souvent inefficiente. Il a aussi mis au jour une question plus profonde: d{\`e}s que le droit veut attribuer revenu, activit{\'e} ou responsabilit{\'e} {\`a} des syst{\`e}mes automatis{\'e}s de plus en plus autonomes, la question du point d'imputation devient in{\'e}vitable \citep{graz2019}. En 2026, toutefois, la r{\'e}ponse doctrinale a chang{\'e}.
+
+Le droit positif europ{\'e}n et suisse ne s'oriente pas vers une personnalit{\'e} g{\'e}n{\'e}rale de l'IA. Il renforce les obligations des acteurs, la tra{\c c}abilit{\'e}, la documentation, l'audit et la supervision humaine \citep{eu2024aiact,ofcom2025swissai,coe2024framework}. Cette trajectoire doit {\^e}tre approuv{\'e}e pour l'essentiel. Elle n'exclut cependant pas qu'une construction plus fine soit utile dans certains contextes particuliers.
+
+La meilleure extension du projet BSCECOM18 consiste donc {\`a} d{\'e}fendre une position interm{\'e}diaire. La personnalit{\'e} juridique pleine et enti{\`e}re de l'IA n'est ni n{\'e}cessaire ni souhaitable. En revanche, une personnalit{\'e} num{\'e}rique limit{\'e}e, con{\c c}ue comme une technique d'imputation subsidiaire, peut am{\'e}liorer l'ordonnancement de la gouvernance, de la tra{\c c}abilit{\'e} et de certaines fonctions fiscales ou assurantielles sans d{\'e}placer le centre de responsabilit{\'e} hors des sujets de droit existants.
+
+\bibliographystyle{plainnat}
+\bibliography{shared_references}
+\end{document}

@@ -1,0 +1,183 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage[numbers]{natbib}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{url}
+\definecolor{accent}{HTML}{183A63}
+\definecolor{soft}{HTML}{EEF2F7}
+\hypersetup{colorlinks=true,linkcolor=accent,citecolor=accent,urlcolor=accent,pdfauthor={BSCECOM18 Research Orchestrator},pdftitle={BSCECOM18 Final Paper Package}}
+\setstretch{1.18}
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent}}{\thesubsection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus .4ex}{0.8ex}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .2ex}{0.5ex}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\footnotesize\color{accent} BSCECOM18 final paper package}
+\fancyhead[R]{}
+\fancyfoot[C]{\footnotesize\thepage}
+\newcommand{\coverrule}{\par\vspace{0.6em}\noindent\color{accent}\rule{\textwidth}{1.2pt}\par\vspace{1.2em}}
+\newcommand{\metarow}[2]{\textbf{#1} & #2 \\\ }
+\newcommand{\abstractbox}[1]{%
+  \begin{center}
+  \setlength{\fboxsep}{10pt}%
+  \fcolorbox{accent}{soft}{\parbox{0.9\textwidth}{#1}}
+  \end{center}
+}
+
+\usepackage[english]{babel}
+\begin{document}
+\begin{titlepage}
+\centering
+{\Large\bfseries\color{accent} BSCECOM18 Final Paper Package\par}
+\coverrule
+{\huge\bfseries From Robots to Legal Digital Personality\par}
+\vspace{0.5em}
+{\Large Reconstructing the Status Debate for Artificial Intelligence in 2026\par}
+\vspace{1.4em}
+\begin{tabular}{>{\bfseries}p{0.23\textwidth}p{0.68\textwidth}}
+\metarow{Research subject}{The legal digital personality: from a 2019 robots approach to AI in 2026}
+\metarow{Language}{English}
+\metarow{Source base}{2019 bachelor thesis, project archive, and updated 2024--2026 Swiss, EU, OECD, IMF and World Economic Forum materials}
+\metarow{Researcher stance}{Independent synthesis from the shared expert base, with emphasis on governance architecture, attribution and institutional design}
+\metarow{Date}{3 April 2026}
+\end{tabular}
+\vfill
+\abstractbox{\textbf{Abstract.} This paper turns a 2019 Swiss bachelor thesis on robot taxation into a 2026 article about the legal status of artificial intelligence. The original thesis concluded that taxing robots as capital was generally inefficient in a small open economy, but it also made a more provocative move: if automated systems were ever taxed on attributed income rather than on their mere existence, some form of electronic personality would be required. The present article argues that the thesis identified a real doctrinal bottleneck but attached it to the wrong endpoint. By 2026, the legal centre of gravity has shifted from physically identifiable robots to distributed AI systems and from personhood narratives to operator-based governance. The strongest extension is therefore not full AI personhood. It is a \emph{limited legal digital personality}: a narrow, functional attribution layer that may help organise registration, traceability, auditability and selected fiscal or insurance consequences in tightly bounded settings, while leaving primary responsibility with natural and juridical persons.}\vfill
+{\small Prepared in the style of the bscecom18-research-orchestrator skill.}\par
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+The 2019 thesis by David Graz asked whether taxing robots could preserve tax revenue, protect labour and stabilise social-insurance financing in Switzerland. Its answer was predominantly negative. A robot tax, understood as a tax on productive capital, appeared distortionary, administratively weak and poorly adapted to a small open economy \citep{graz2019}. Yet the thesis also contained a more ambitious legal intuition. It suggested that if robots were ever treated not merely as capital goods but as quasi-workers or as entities with attributable income, taxation would ultimately require some form of electronic legal personality \citep{graz2019,oberson2017}.
+
+That move deserves a fresh reading. Between 2019 and 2026, the frontier of automation shifted from visible industrial robots toward foundation models, application programming interfaces, enterprise copilots, algorithmic decision systems and other forms of intangible, cross-border and embedded AI. At the same time, the law moved in a different direction from what many early personhood debates implied. The leading public-law frameworks now regulate providers, deployers, importers, distributors and institutional users rather than granting legal personhood to AI systems themselves \citep{eu2024aiact,ec2026aiactfaq,ofcom2025swissai,coe2024framework}.
+
+The central question therefore changes. The issue is no longer whether a robot should become a legal person in the abstract. The issue is whether there remains, between ``ordinary tool'' and ``full person'', a narrower legal construction that can organise attribution, accountability and certain fiscal consequences more coherently in AI-mediated environments. This paper calls that intermediate possibility \emph{limited legal digital personality}.
+
+The argument proceeds in five steps. Section 2 reconstructs the 2019 problem and explains why the earlier thesis remains intellectually valuable. Section 3 shows why 2026 requires a move from a robot-centred ontology to a systems-centred one. Section 4 clarifies what legal personality can and cannot mean in this debate. Section 5 shows why current law favours operator-based governance. Section 6 connects the status question back to taxation and social-insurance financing. Section 7 proposes a cautious model of limited legal digital personality and Section 8 states its limits.
+
+\section{Recovering the 2019 Problem}
+The best way to read the 2019 thesis today is not as a defence of robot taxation but as a diagnosis of the legal and fiscal mismatch that appears when labour-substituting technology is forced into categories designed for ordinary capital \citep{graz2019}. The thesis argued that a machine-specific tax base would suffer from weak definition, localisation problems, administrative cost and distortionary incidence. That critique was consistent with the late-2010s literature, which generally found that robot taxes are, at best, highly conditional instruments \citep{guerreiro2019,thuemmel2018,gasteiger2017,acemoglu2018modeling}.
+
+What distinguished the thesis was its insistence that a more ambitious tax logic would require a status shift. If robots were taxed on attributed income rather than on their mere existence, they would need a legal interface through which income, duties and responsibility could be organised \citep{graz2019}. That idea resonated with Xavier Oberson's suggestion that a sufficiently autonomous robot might eventually give rise to an ``electronic ability to pay'' for tax purposes \citep{oberson2017}. It also touched the broader concern raised by Luciano Floridi: the real question is not merely whether robots should be taxed, but how societies should distribute duties and responsibilities as digital systems become more agency-like in practice \citep{floridi2017}.
+
+From the standpoint of 2026, the thesis therefore survives in three ways. First, it remains persuasive in its rejection of a literal tax on productive machines. Second, it correctly identifies the gap between legal subjecthood and economic attribution. Third, it intuits that the most difficult question is not the tax rate but the tax subject. That is where the updated paper begins.
+
+\section{Why 2026 Is Different: From Robots to AI Systems}
+The move from 2019 to 2026 is not a cosmetic substitution of ``AI'' for ``robots''. It is a transformation in the legal and economic object under analysis. In 2019, the robot could still serve as a visible proxy for automation: a machine, a production input, a potentially identifiable capital good. In 2026, much of the relevant automation is embedded in software, provided through cloud services, updated continuously and distributed across multiple actors and jurisdictions \citep{oecd2025adoption,oecd2025sme,wef2025jobs}.
+
+This matters because taxation and legal attribution both depend on identifying an object or subject to which consequences attach. A discrete robot may be imperfect but still physically countable. A general-purpose model integrated into a software suite is not. The same enterprise may automate tasks through model subscriptions, internal fine-tuning, outsourced inference, API calls, datasets, orchestration software and human-in-the-loop redesign without ever purchasing anything that looks like a taxable robot in the ordinary sense. The locus of value creation becomes more diffuse, and so does the locus of accountability \citep{brollo2024,oecd2025adoption}.
+
+The regulatory environment confirms this shift. The EU Artificial Intelligence Act entered into force in August 2024 and is applying in phases through 2027. Its architecture is risk-based, not personhood-based. It imposes obligations such as documentation, logging, human oversight and post-market monitoring on identifiable actors in the AI lifecycle \citep{eu2024aiact,ec2026aiactfaq}. Switzerland has moved in a comparable direction. Its 2025 federal strategy explicitly favours a sector-specific approach, with limited cross-sector intervention and a consultation draft expected by the end of 2026 \citep{ofcom2025swissai}. At the international level, the Council of Europe has opened the first binding AI treaty for signature, again focusing on governance and accountability rather than AI personhood \citep{coe2024framework}.
+
+In short, the problem survives, but the object changes. The older robot-tax frame is too narrow for present-day AI systems. What remains useful is the question the frame exposed: who or what should count as the point of legal and fiscal attribution when economically meaningful activity is increasingly mediated by AI?
+
+\section{Legal Personality as a Technique of Attribution}
+Much of the public debate treats legal personality as though it were an honour conferred on socially important entities. That is the wrong starting point. Legal personality is a technique of attribution. The law uses it to create a stable point to which rights, duties, capacities, liabilities, representation and patrimony may attach. It does so because such an attribution point solves coordination problems. Corporations are the familiar example.
+
+Once personality is understood functionally, the AI debate becomes more tractable. Three different ideas can be distinguished.
+
+\subsection{Full legal personhood}
+Full AI personhood would mean something close to corporate subjecthood. The AI system would become a legal bearer of a broad bundle of capacities and liabilities. Such a move would require answers about representation, patrimony, insolvency, sanctions, taxation, procedural capacity and constitutional compatibility. On current technology and doctrine, that move remains excessive.
+
+\subsection{Symbolic personhood}
+A weaker position treats personhood language as a symbolic way to mark the social salience of AI. This is rhetorically powerful but doctrinally thin. Symbolic personhood is unlikely to improve either liability allocation or tax design.
+
+\subsection{Functional legal digital personality}
+The third possibility is narrower. It does not give AI a general legal self. Instead, it creates a bounded legal-technical interface that preserves a persistent system identity for registration, traceability, audit trails and selected compliance functions. This is the sense in which the present paper speaks of \emph{limited legal digital personality}. It is not an alternative to human or corporate responsibility. It is a structured supplement to it.
+
+That functional turn is also what makes the concept worth examining. The 2017 European Parliament resolution on civil law rules on robotics famously flirted with the language of ``electronic personality'' \citep{ep2017robotics}. In hindsight, the resolution is best read not as a template for present law, but as evidence that European institutions were already searching for an intermediate legal vocabulary. The doctrinal challenge remains; the vocabulary must be refined.
+
+\section{Why Current Law Prefers Operator-Based Governance}
+The strongest evidence against full AI personhood is not philosophical; it is institutional. The law that actually emerged in Europe and Switzerland assigns duties to operators rather than to AI systems. This is not a mere policy preference. It reflects the structure of legal governance.
+
+When the relevant risks concern opacity, discrimination, safety, manipulation, reliability or fundamental rights, the law needs addressees who can document, disclose, monitor, mitigate, remedy and pay. Firms, professionals and authorities can do these things. Current AI systems cannot. For that reason, the AI Act is built around providers, deployers and other lifecycle actors, together with specific duties such as logging, documentation and human oversight \citep{eu2024aiact,ec2026aiactfaq}. The Council of Europe convention is likewise anchored in state obligations and human-rights-compatible governance \citep{coe2024framework}. Switzerland's approach follows the same logic through targeted legal adjustments rather than the creation of a new legal subject \citep{ofcom2025swissai}.
+
+The resulting picture is coherent. Law has not ignored the status question. It has answered it indirectly by preserving the personhood of existing actors while deepening obligations around AI systems. That answer is persuasive for general governance. Yet it does not eliminate every attribution problem. Some highly autonomous, continuously updated or revenue-relevant AI systems may still generate practical pressure for a persistent system identity that is more structured than a mere serial number and less expansive than personhood.
+
+\section{Fiscal and Social-Insurance Implications}
+The user asked that the paper remain connected to the original fiscal core of the project. That connection is crucial. Status debates are not only about liability or ethics; they also determine how law imagines taxable subjects, reporting duties and the financing base of social insurance.
+
+Here the 2019 thesis remains especially useful. It argued that taxing robots as productive capital is generally undesirable because the taxable object is unstable, the administrative burden is high and the economic burden is easily shifted \citep{graz2019}. Those objections are even stronger once automation becomes intangible. An AI tax defined around a machine-like object is conceptually weaker in 2026 than a robot tax already was in 2019.
+
+This does not mean the fiscal problem disappeared. If AI enables firms to scale output while relying less heavily on payroll, wage-linked tax and contribution systems may become a thinner financing base. That is why the fiscal question today points less toward taxing the ``machine'' and more toward taxing the firm, the rents it captures, or broader value bases that remain observable \citep{brollo2024,swissfdf2024pillar2}. Switzerland's implementation of the OECD minimum tax is relevant here: it shows that internationally coordinated firm-level taxation is institutionally more realistic than personifying AI for general tax purposes \citep{swissfdf2024pillar2}.
+
+The current empirical literature reinforces this conclusion. AI adoption can support productivity, but the gains depend on organisational capability, complementary skills and the surrounding policy environment \citep{oecd2025adoption,oecd2025sme,wef2025jobs}. IMF work similarly stresses that the key fiscal challenge is to broaden the gains from generative AI while cushioning labour-market disruption and inequality \citep{brollo2024}. These are distributional and institutional tasks. They do not require AI personhood.
+
+What, then, is the fiscal relevance of legal digital personality? It is modest but real. In narrowly specified domains, a persistent legal-technical identity could improve reporting, auditability, insurance layering or the attribution of revenue-relevant automated activity without turning AI into a general taxpayer. The doctrinal value lies in improving traceability, not in replacing firms or humans as the primary subjects of tax law.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Competing legal models for AI status in 2026}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3cm} >{\raggedright\arraybackslash}p{3.2cm} X >{\centering\arraybackslash}p{1.6cm}}
+\toprule
+Model & Attribution centre & Main advantage and main risk & 2026 fit \\
+\midrule
+Ordinary tool model & Human and corporate actors only & Clear continuity with existing law, but weak when persistent system identity matters for traceability or sector-specific audit functions & High \\
+Operator-based governance & Providers, deployers and regulated institutions & Fits current public-law practice and preserves answerable actors; may leave residual attribution gaps in highly automated settings & Very high \\
+Full AI personhood & AI system as broad legal subject & Strongest conceptual break, but creates doctrinal overload, anthropomorphism and responsibility laundering risks & Low \\
+Limited legal digital personality & Persistent system identity embedded in human and corporate responsibility chains & Improves registration, logging and bounded compliance design if tightly delimited; becomes dangerous if treated as a liability shield & Medium \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Proposal: A Limited Legal Digital Personality}
+The constructive claim of this paper is deliberately narrow. The law should not create a general AI person. It may, however, consider a \emph{limited legal digital personality} in situations where a persistent and legally legible system identity materially improves governance.
+
+A defensible model would require at least six cumulative safeguards.
+
+\begin{enumerate}[leftmargin=1.4em]
+  \item \textbf{Functional necessity.} The category should exist only where existing actor-based law cannot adequately organise traceability, audit continuity or reporting.
+  \item \textbf{Bounded scope.} The category should be sector-specific or use-specific, never a general status for all AI systems.
+  \item \textbf{No substitution of responsibility.} Natural and juridical persons must remain the primary bearers of legal responsibility. The digital personality cannot become a shield.
+  \item \textbf{No general rights bundle.} The category should not entail broad constitutional, patrimonial or political rights.
+  \item \textbf{Regulatory gain.} It must demonstrably improve registration, logging, auditability, insurance or compensation design.
+  \item \textbf{Fiscal modesty.} Any fiscal relevance must remain auxiliary - for example, better reporting of attributed automated activity - rather than constituting a general AI tax subject.
+\end{enumerate}
+
+Under these constraints, legal digital personality becomes a technical governance tool rather than an anthropomorphic category. It can help the law ``see'' a system over time without pretending that the system is a moral or civic person.
+
+\section{Objections and Limits}
+Three objections deserve emphasis.
+
+The first is the \emph{anthropomorphism objection}. Any move toward digital personality risks smuggling in the language of human or corporate personhood. The answer is conceptual discipline: the category must be expressly functional, bounded and subordinate.
+
+The second is the \emph{liability-laundering objection}. Firms may try to use a digital personality to externalise blame. For that reason, the model proposed here is unacceptable unless all primary liability and compliance duties remain attached to human and corporate actors.
+
+The third is the \emph{duplication objection}. Perhaps existing law already has enough tools: registration, product identifiers, logs, insurance mandates and sectoral reporting duties. In many settings that objection will be correct. The burden of proof therefore lies on anyone defending a new status category.
+
+These objections explain why the present argument is cautious. Limited legal digital personality is not the inevitable future of AI law. It is a candidate instrument for specific settings in which existing categories are demonstrably too thin but full personhood is clearly too much.
+
+\section{Conclusion}
+The 2019 thesis remains more valuable than a surface reading suggests. Its lasting insight was not that robot taxation is inefficient, although that claim still largely holds. Its deeper insight was that once law seeks to attribute income, activity or responsibility to increasingly autonomous technological systems, the question of legal status becomes unavoidable \citep{graz2019}. What changed by 2026 is the answer.
+
+The dominant legal trajectory in Europe and Switzerland does not support full AI personhood. It supports operator-based governance, risk-based duties and stronger traceability \citep{eu2024aiact,ofcom2025swissai,coe2024framework}. Yet that trajectory still leaves space for a narrower legal innovation. A limited legal digital personality - tightly bounded, strictly functional and fully subordinate to human and corporate responsibility - may offer a better way to organise certain attribution problems than either ordinary-tool formalism or expansive personhood rhetoric.
+
+The paper's final position is therefore deliberately balanced. The 2019 ``electronic personality'' intuition should neither be abandoned nor accepted at face value. It should be reconstructed. In the AI environment of 2026, the strongest extension is not a new artificial legal person. It is a precise and reversible legal interface for selected contexts in which governance, traceability and fiscal reporting require more than a mere object but less than a person.
+
+\bibliographystyle{plainnat}
+\bibliography{shared_references}
+\end{document}
