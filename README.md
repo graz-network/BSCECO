@@ -1,332 +1,298 @@
 # BSCECOM18 Research Orchestrator
 
-BSCECOM18 Research Orchestrator is a reusable academic-research workflow built around David Graz's 2019 bachelor thesis on robot taxation and its 2026 extension toward AI fiscal architecture. The project is designed to help researchers and students transform a source paper and its project materials into structured academic outputs such as summaries, referee reports, originality assessments, extension plans, and article drafts.
+A staged academic research skill that transforms a bachelor thesis and supporting source archive into structured expert analysis, originality plans, bilingual article blueprints, and polished PhD-level paper drafts.
 
-The orchestrator is especially suited to projects that begin with an existing thesis, working paper, seminar draft, or dissertation chapter and aim to push it toward a stronger research article.
+## Overview
 
-## Research focus
+`bscecom18-research-orchestrator` is designed for research projects that begin with an existing thesis, dissertation chapter, seminar paper, or source archive and need to be extended into a stronger academic contribution.
 
-The core thematic line of the project is the evolution from **robots** to **AI systems** between **2019 and 2026**, with a focus on:
+The current default project theme is:
 
-- robot taxation
-- AI-enabled automation
-- labour share and inequality
-- social-insurance financing
-- Swiss and comparative fiscal architecture
-- legal feasibility and operator-based AI governance
+> **The legal digital personality: from a 2019 robots approach to AI in 2026**
 
-## Objectives
+The skill preserves the original thematic core of the source work while reframing it for a more current and defensible 2026 research context.
 
-The repository is organized to support four main objectives:
+It is especially useful for interdisciplinary projects at the intersection of:
 
-1. **Analyse a source paper rigorously**
-2. **Produce reusable academic outputs**
-3. **Extend the original research question into a stronger article**
-4. **Document the workflow clearly enough for students to understand and reuse it**
+* law
+* taxation and fiscality
+* automation and artificial intelligence
+* labour economics
+* social-insurance financing
+* governance and legal theory
 
-## What the orchestrator produces
+## What the Skill Does
 
-Depending on the workflow selected, the project can generate:
+The skill runs a staged workflow around a thesis and its project materials.
 
-- academic summary
-- referee report
-- academic review
-- originality assessment
-- next-step memo
-- extension roadmap
-- PhD-level article draft
-- LaTeX manuscript
-- compiled PDF
-- annotated PDF with highlights and comments
-- merged output packets combining source article and generated material
+It can:
 
-## Core intellectual starting point
+* inventory and map project sources
+* extract the original research question, method, and conclusions
+* identify which assumptions remain valid and which are outdated
+* run separate expert reviews from multiple disciplinary lenses
+* generate originality audits and extension strategies
+* produce article blueprints for a PhD-level paper
+* write full article drafts in **English and French**
+* keep the two final researcher syntheses **independent**, even when they share the same source material and subject
 
-The project starts from the argument that a literal robot tax is generally weak policy in a small open economy because it is hard to define, hard to administer, and likely to create distortionary incidence effects. The 2026 extension reframes that debate around AI systems, intangible automation, and firm-level fiscal architecture rather than machine-specific taxation.
+## Core Research Subject
 
-## Multi-agent architecture
+By default, the skill is configured around the shared subject:
 
-The default orchestrator uses expert roles rather than independent code agents. Each role contributes a specific layer of reasoning.
+> **The legal digital personality: from a 2019 robots approach to AI in 2026**
 
-### 1. Macro economist expert
-Focus:
-- automation and productivity
-- labour share and wages
-- incidence and distortion
-- macroeconomic modelling
-- transition and redistribution effects
+This means the skill is optimized to explore questions such as:
 
-Typical questions:
-- What happens to labour demand when automation shifts from embodied robots to intangible AI?
-- Which tax base is least distortionary in a small open economy?
-- How do the results compare with the literature on automation and inequality?
+* How should a 2019 robot-centered legal or tax debate be reframed in 2026?
+* What remains analytically valid from earlier robot-tax or robot-personality arguments?
+* How should AI systems be treated in legal, fiscal, and governance analysis today?
+* Is full legal personality the right framework, or should a narrower legal-digital attribution model be preferred?
 
-### 2. Fiscality expert
-Focus:
-- tax-base design
-- administrative feasibility
-- compliance costs
-- social-insurance financing
-- VAT, value-added, and firm-level taxation
-- international tax coordination
+## Role Architecture
 
-Typical questions:
-- Is the proposed tax base observable and enforceable?
-- Would a robot tax or AI tax be inferior to broader firm-level or value-added approaches?
-- How should fiscal instruments be framed for Switzerland?
+The skill uses **five role lenses**.
 
-### 3. Law doctor
-Focus:
-- legal coherence
-- taxable object definition
-- legal personhood debates
-- AI governance
-- regulatory feasibility
-- Swiss and European legal framing
+### Expert roles
 
-Typical questions:
-- Can AI systems realistically be treated as taxable persons?
-- What is the legal difference between taxing an object, an operator, and a firm?
-- How does the regulatory trend affect fiscal design?
+* **economist expert**
+* **fiscality expert**
+* **legal personality expert**
 
-### 4. Researcher agent
-Focus:
-- synthesis
-- final argument design
-- article architecture
-- final writing
-- LaTeX drafting
-- output coherence across all stages
+These roles do not write the final article. They generate expert inputs, critiques, reframings, and extension ideas.
 
-This role is the final writing authority. All final article drafting should be consolidated and written by the **researcher agent**.
+### Researcher roles
 
-## Default workflow
+* **researcher agent english**
+* **researcher agent french**
 
-The standard end-to-end workflow is:
+These two researcher agents:
 
-1. **Ingest source material**
-   - bachelor thesis PDF
-   - project archive
-   - notes, references, and contextual files
-2. **Map the original argument**
-   - identify question, thesis, method, assumptions, and findings
-3. **Generate structured research outputs**
-   - summary
-   - referee report
-   - academic review
-   - originality note
-   - extension memo
-4. **Reframe the research question**
-   - move from robot taxation toward AI fiscal architecture where appropriate
-5. **Stress-test the identification and policy logic**
-   - endogeneity
-   - omitted variables
-   - external validity
-   - counterfactual logic
-   - robustness expectations
-6. **Build the article blueprint**
-   - title
-   - abstract
-   - literature review
-   - theoretical framing
-   - empirical or conceptual contribution
-   - policy implications
-7. **Write the final article**
-   - led by the researcher agent
-   - output in LaTeX first
-   - compile to PDF when required
-8. **Document the process for reuse**
-   - preserve prompts, structures, and output templates for students
+* work from the **same expert base**
+* share the **same research subject**
+* synthesize the expert outputs **independently**
+* produce two separate articles, one in English and one in French
+* are **not** meant to produce simple translations of each other
 
-## Repository structure
+## Workflow
 
-A recommended repository layout is:
+The default execution order is:
+
+1. **Intake and source map**
+2. **Economist review**
+3. **Fiscality review**
+4. **legal personality review**
+5. **Researcher synthesis (English)**
+6. **Researcher synthesis (French)**
+7. **Originality and extension planning**
+8. **Article blueprint**
+9. **Final English LaTeX draft**
+10. **Final French LaTeX draft**
+11. **Optional PDF rendering**
+
+At each stage, the skill documents:
+
+* input used
+* transformation performed
+* output produced
+* unresolved questions
+
+## Default Outputs
+
+When the user says something like **“run the app”** or provides the thesis plus archive without narrowing the request, the skill returns this bundle:
+
+1. project inventory
+2. analysis
+3. summary referee
+4. academic review
+5. originality
+6. next step
+7. extensions
+8. article blueprint
+9. researcher-written article draft in English LaTeX
+10. researcher-written article draft in French LaTeX
+
+## Input Types
+
+The skill can use the following inputs when available:
+
+* uploaded bachelor thesis PDF
+* uploaded project ZIP or extracted source folder
+* uploaded notes, draft chapters, or bibliographies
+* optional Google Drive documents when explicitly referenced
+
+Typical project materials include:
+
+* original thesis manuscript
+* bibliography files
+* draft articles
+* notes on legal doctrine or tax-policy developments
+* source PDFs and reference folders
+
+## Repository Structure
 
 ```text
 bscecom18-research-orchestrator/
-├── README.md
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
 ├── references/
-│   ├── article-blueprint.md
-│   ├── command-map.md
+│   ├── workflow.md
 │   ├── expert-roles.md
 │   ├── output-spec.md
-│   ├── student-reuse-guide.md
-│   └── workflow.md
-├── templates/
-│   ├── academic-review-template.md
-│   ├── extension-plan-template.md
-│   ├── originality-template.md
-│   ├── referee-report-template.md
-│   └── latex-article-template.tex
-├── assets/
-│   └── latex/
-│       └── article-template.tex
-├── inputs/
-│   ├── pdf/
-│   ├── notes/
-│   └── archives/
-├── outputs/
-│   ├── summaries/
-│   ├── reports/
-│   ├── annotated-pdfs/
-│   ├── merged-packets/
-│   ├── latex/
-│   └── pdf/
-└── docs/
-    ├── methodology.md
-    ├── contribution-map.md
-    └── changelog.md
+│   ├── article-blueprint.md
+│   ├── commands.md
+│   └── reuse-guide.md
+└── assets/
+    └── latex/
+        └── article-template.tex
 ```
 
-## Inputs
+## Key Files
 
-The orchestrator is designed to work with:
+### `SKILL.md`
 
-- uploaded PDF papers
-- project ZIP archives
-- Google Drive documents
-- bundled project context
-- prior article drafts
-- thesis materials
-- bibliography and notes
+Main skill instructions and staged workflow logic.
 
-## Output philosophy
+### `references/workflow.md`
 
-The repository follows five output principles:
+Execution sequence and documentation rules.
 
-1. **Faithfulness first**  
-   Do not invent facts missing from the source material.
+### `references/expert-roles.md`
 
-2. **Constructive critique**  
-   Negative comments should always imply a concrete improvement path.
+Responsibilities of the macro, fiscality, law, and researcher agents.
 
-3. **Reusable structure**  
-   Outputs should be templated enough for students to reproduce.
+### `references/output-spec.md`
 
-4. **Bilingual friendliness where needed**  
-   Some workflows may generate English and French versions.
+Default structure for analysis, originality, blueprint, and final article outputs.
 
-5. **Research escalation**  
-   The goal is not just to summarize a bachelor thesis, but to push it toward a stronger article.
+### `references/article-blueprint.md`
 
-## Example command set
+Shared subject framing, title patterns, and recommended 20-page architecture.
 
-Typical orchestrator commands include:
+### `references/commands.md`
 
-- `analysis`
-- `summary`
-- `referee_report`
-- `academic_review`
-- `originality`
-- `next_steps`
-- `extensions`
-- `final_article`
-- `pdf_annotations`
-- `pdf_resume`
+Command-style triggers such as `inventory`, `analyse`, `originality`, `article blueprint`, and `draft article`.
 
-## Suggested usage
+### `references/reuse-guide.md`
 
-### Example 1: thesis-to-article workflow
-Use when you want to transform a bachelor thesis into an article draft.
+Guidance for adapting the skill to another thesis or adjacent topic.
 
-Expected outputs:
-- summary
-- referee report
-- originality memo
-- extensions
-- final LaTeX article
+### `assets/latex/article-template.tex`
 
-### Example 2: article evaluation workflow
-Use when you want to evaluate a seminar paper or working paper critically before revision.
+Reusable LaTeX skeleton for article drafting.
 
-Expected outputs:
-- structured referee report
-- academic review
-- annotated PDF
-- merged article-and-review packet
+## Example Prompts
 
-### Example 3: student learning workflow
-Use when the goal is pedagogical.
+### Full project run
 
-Expected outputs:
-- simplified summary
-- contribution map
-- critique guide
-- explanation of next research steps
+```text
+I uploaded my 2019 bachelor thesis and the full project archive. Run the bscecom18-research-orchestrator end to end on this project. Keep the Swiss framing, update the debate from a 2019 robots approach to AI in 2026, and produce the full staged bundle.
+```
 
-## Methodological stance
+### Inventory only
 
-The orchestrator is designed for rigorous but plain-language academic work. It encourages the user to:
+```text
+Inventory this project and build a source map. Extract the original research question, hypotheses, method, conclusion, and identify what is outdated by 2026.
+```
 
-- identify the exact research question
-- separate contribution from motivation
-- distinguish correlation from causation
-- inspect assumptions explicitly
-- check for endogeneity and selection bias
-- evaluate both statistical and economic significance
-- ask whether the chosen method fits the question
-- compare the paper against the strongest available benchmark
-- propose specific robustness checks rather than vague criticism
+### Expert analysis only
 
-## Writing conventions
+```text
+Analyse this thesis with the macro economist, fiscality expert, and law doctor lenses, then produce independent English and French syntheses.
+```
 
-Preferred style:
-- academic
-- precise
-- constructive
-- explicit about uncertainty
-- sectioned and reusable
-- suitable for LaTeX conversion
+### Blueprint request
 
-Avoid:
-- vague praise
-- invented data or references
-- unsupported causal claims
-- generic criticism without a fix
+```text
+Build the article blueprint for the shared subject “The legal digital personality: from a 2019 robots approach to AI in 2026”.
+```
 
-## Recommended README extensions
+### Drafting request
 
-As the project grows, consider adding:
+```text
+Write both full article drafts in LaTeX. The English and French versions must be independent syntheses, not translations.
+```
 
-- a `CONTRIBUTING.md` for student collaborators
-- sample input/output pairs
-- a reproducibility note
-- a bibliography management guide
-- a style guide for LaTeX article production
+## Use Cases
 
-## Quick start
+This skill is a good fit when you want to:
 
-1. Add the source thesis or paper to `inputs/pdf/`
-2. Add any ZIP archive or supporting materials to `inputs/archives/`
-3. Load the orchestrator skill and relevant templates
-4. Run the analysis sequence:
-   - summary
-   - referee report
-   - academic review
-   - originality
-   - extensions
-5. Promote the best extension path into a final article outline
-6. Write the article in LaTeX
-7. Export or compile the final PDF
-8. Save outputs to the appropriate `outputs/` folders
+* upgrade a bachelor thesis into a more publishable paper
+* test how a 2019 argument survives in a 2026 AI context
+* generate a bilingual academic article package
+* separate disciplinary expert review from final article writing
+* preserve traceability between original thesis claims and new contributions
 
-## Intended users
+## Design Principles
 
-This repository is intended for:
+The skill follows several core design principles:
 
-- student researchers
-- academic supervisors
-- thesis writers
-- researchers converting prior work into publishable drafts
-- anyone working on automation, taxation, AI governance, or social-insurance financing
+* **the original thesis remains visible**: the workflow explicitly tracks what comes from the source thesis and what is newly added
+* **experts and researchers are separated**: the expert roles diagnose and critique, while the researcher roles synthesize and write
+* **bilingual outputs are independent**: the English and French researcher agents may converge on substance but should differ in framing, emphasis, and argumentative flow
+* **the 2019 to 2026 transition is explicit**: the skill is built to identify continuity, revision, and novelty
+* **the writing should remain defensible**: the skill avoids unsupported futurism and forces explicit assumptions
 
-## Project origin
+## Recommended Research Questions
 
-The repository is rooted in a 2019 bachelor thesis that evaluated whether robot taxation is desirable, and in a 2026 article draft that translates that question into the era of generative AI, intangible automation, and AI fiscal architecture.
+The skill is especially strong for projects built around questions such as:
+
+* Should AI receive a limited legal digital personality in 2026?
+* How should the legal personality of robots be reframed in the age of AI systems?
+* What is the most defensible legal and fiscal architecture for AI-driven production?
+* How should social-insurance financing evolve when automation becomes increasingly intangible?
+
+## Reusing the Skill for Other Projects
+
+The skill can be reused for other thesis-based research workflows.
+
+When adapting it:
+
+* keep the staged workflow
+* keep the separation between expert roles and researcher roles
+* keep the documentation of transformations from source work to extended article
+* change the shared subject only when the new project truly requires a different thematic frame
+
+## Current Focus and Limits
+
+This skill is currently optimized for:
+
+* Swiss and European legal-policy reasoning
+* AI, taxation, legal personality, and social-insurance questions
+* thesis-to-article transformation
+* bilingual English/French academic drafting
+
+It is less suited to:
+
+* purely empirical econometrics projects with no legal or policy dimension
+* highly technical computer-science research workflows
+* non-academic output formats
+
+## Contribution Pattern
+
+A strong output from this skill usually does three things:
+
+1. recovers the logic of the original thesis
+2. shows why the 2019 robot framing is incomplete in 2026
+3. replaces the narrow earlier framing with a broader and more defensible AI-era legal and fiscal architecture
+
+## Status
+
+This repository contains the reusable skill resources for the BSCECOM18 research workflow.
+
+It is intended for iterative academic development and can be extended with:
+
+* stronger bibliographic resources
+* target-journal formatting rules
+* citation-style templates
+* additional doctrinal or comparative-law references
+* rendering scripts for publication-ready PDFs
 
 ## License
 
-Choose the license that fits your publication and collaboration goals before public release.
+Add your preferred license here.
+
+## Acknowledgment
+
+Built to support the transformation of thesis-based research into stronger interdisciplinary academic outputs in law, economics, taxation, and AI governance.
